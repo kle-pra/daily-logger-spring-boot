@@ -4,4 +4,4 @@ When build, frontend files are copied to over to static folder.
 
 Demo will be available at heroku. In progress ... 
 
-For comparision, here is the same app i build with node backend: https://github.com/kle-pra/daily-logger-node
+For comparision, here is the same app I build with node backend: https://github.com/kle-pra/daily-logger-node
