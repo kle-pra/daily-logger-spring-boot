@@ -9,7 +9,6 @@ import com.klepra.dailylogger.model.Log;
 import com.klepra.dailylogger.model.User;
 import com.klepra.dailylogger.repository.LogRepository;
 import com.klepra.dailylogger.repository.UserRepository;
-import java.util.Arrays;
 import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
