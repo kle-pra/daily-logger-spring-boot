@@ -2,6 +2,7 @@ Log your daily activity with Angular 5 & Spring Boot - Full stack application ex
 
 When build, frontend files are copied to over to static folder.
 
-Demo will be available at heroku. In progress ... 
+Demo here: https://daily-logger-spring-boot.herokuapp.com/register
+Just register with some throw-a-way username/password or use the combination "user/password".
 
 For comparision, here is the same app I build with node backend: https://github.com/kle-pra/daily-logger-node
