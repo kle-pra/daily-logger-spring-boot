@@ -123,10 +123,7 @@
             </build>
         </profile>
         <profile>
-            <id>heroku</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
+            <id>build-with-frontend</id>
             <build>
                 <plugins>
                     <plugin>
