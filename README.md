@@ -2,6 +2,18 @@ Log your daily activity with Angular 5 & Spring Boot - Full stack application ex
 
 When build, frontend files are copied to over to static folder.
 
+
+Installation:
+---
+
+- cd frontend
+- npm install
+- npm run build
+- cd ..
+- mvn package
+- java -jar target/dailylogger-0.0.1-SNAPSHOT.jar
+
+
 Demo here: https://daily-logger-spring-boot.herokuapp.com/register
 Just register with some throw-a-way username/password or use the combination "user/password".
 
