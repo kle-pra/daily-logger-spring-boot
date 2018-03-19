@@ -124,6 +124,9 @@
         </profile>
         <profile>
             <id>heroku</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
             <build>
                 <plugins>
                     <plugin>

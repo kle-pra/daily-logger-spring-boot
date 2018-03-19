@@ -21,7 +21,7 @@
         Confirm your password
       </div>
       <div *ngIf="password.value!=confirmPass.value && confirmPass.touched" class="alert alert-danger">
-        Password must match
+        Passwords must match
       </div>
       <br>
       <button [disabled]="f.invalid || password.value!=confirmPass.value" class="btn btn-outline-success btn-block" type="submit">Register</button>
