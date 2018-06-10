@@ -1,6 +1,6 @@
-Log your daily activity with Angular 5 & Spring Boot - Full stack application example. Uses h2/mysql with CRUD functionality. You can use this project to build on top of it and create something bigger. It also demonstrates token based auth with JWT.
+Log your daily activity with Angular & Spring Boot - Full stack application example. Uses h2/mysql with CRUD functionality. You can use this project to build on top of it and create something bigger. It also demonstrates token based auth with JWT.
 
-When build, frontend files are copied to over to static folder.
+When built, frontend files are copied to over to static folder.
 
 
 Installation:
