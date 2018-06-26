@@ -4,6 +4,7 @@ import com.klepra.dailylogger.model.Log;
 import com.klepra.dailylogger.model.User;
 import com.klepra.dailylogger.repository.LogRepository;
 import com.klepra.dailylogger.repository.UserRepository;
+import com.klepra.dailylogger.utils.DateUtils;
 import java.text.ParseException;
 import java.util.Date;
 import java.util.List;
@@ -30,16 +31,16 @@ public class LogService {
 
     public List<Log> getLogsByUserAndDate(String username, Date date) throws ParseException {
 
-        //alternative way:
         //Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        //return this.logRepository.findAllByUserForDay(DateUtils.getDateZeroTime(date), DateUtils.getTommorowsDateMidnight(), user);
         User user = userRepository.findOneByUsername(username);
-        return user.getLogs();
+        return this.logRepository.findAllByUserForDay(DateUtils.getDateZeroTime(date), DateUtils.getTommorowsDateMidnight(), user);
+        //alternative way:
+//        return user.getLogs();
     }
 
     @Transactional
     public void deleteLogByIdAndUser(Long id, String username) {
-        User user = this.userRepository.findOneByUsername(username); 
+        User user = this.userRepository.findOneByUsername(username);
         this.logRepository.deleteByIdandUser(id, user);
     }
 
