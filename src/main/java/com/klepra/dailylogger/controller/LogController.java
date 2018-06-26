@@ -32,7 +32,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("/api/logs")
 public class LogController {
 
-    private LogService logService;
+    private final LogService logService;
 
     public LogController(LogService logService) {
         this.logService = logService;

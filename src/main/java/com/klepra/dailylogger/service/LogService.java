@@ -30,10 +30,9 @@ public class LogService {
     }
 
     public List<Log> getLogsByUserAndDate(String username, Date date) throws ParseException {
-
         //Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         User user = userRepository.findOneByUsername(username);
-        return this.logRepository.findAllByUserForDay(DateUtils.getDateZeroTime(date), DateUtils.getTommorowsDateMidnight(), user);
+        return this.logRepository.findAllByUserForDay(DateUtils.getDateZeroTime(date), DateUtils.getTommorowsDateMidnight(date), user);
         //alternative way:
 //        return user.getLogs();
     }

@@ -19,20 +19,21 @@ public class DateUtils {
 
     public static Date getDateZeroTime(Date date) throws ParseException {
         //we want today's date with time part set to 00:00:00
+
         DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
         Date todayWithZeroTime = formatter.parse(formatter.format(date));
         return todayWithZeroTime;
     }
-    
-        public static Date getTommorowsDateMidnight() throws ParseException {
+
+    public static Date getTommorowsDateMidnight(Date date) throws ParseException {
         final Calendar cal = Calendar.getInstance();
-        cal.add(Calendar.DATE, 2);
+        cal.setTime(date);
+        cal.add(Calendar.DATE, 1);
         cal.add(Calendar.HOUR, 0);
         cal.set(Calendar.MINUTE, 0);
         cal.set(Calendar.SECOND, 0);
         cal.set(Calendar.MILLISECOND, 0);
         return cal.getTime();
     }
-
 
 }
